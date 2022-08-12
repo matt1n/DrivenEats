@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>DrivenEats</title>
+</head>
+<body>
+    <div class="topo">
+        <div class="logo">
+            <h1>DrivenEats</h1>
+            <p>Sua comida em 6 minutos</p></div>
+        </div>
+    </div>
+    <div class="baixo">
+        <button>Selecione os 3 itens para fechar o pedido</button>
+    </div>
+    <div class="pagina">
+        <h2>Primeiro, seu prato</h2>
+        <div class="pratos-principais">
+            <div class="opcao escondidinho" onclick="selecionarPrato('.escondidinho')">
+                <img src="Media/453007-prato-vazio-vetor.jpg">
+                <h3>Escondidinho</h3>
+                <p>Escondidinho de </p>
+                <p class="preco">R$ 0,01</p>
+            </div>
+            <div class="opcao farofa" onclick="selecionarPrato('.farofa')">
+                <img src="Media/farofa-tanajura3.jpg">
+                <h3>Farofa de Formiga</h3>
+                <p>Farofinha de Tanajura hmmmmmm </p>
+                <p class="preco">R$ 20,00</p>
+            </div>
+            <div class="opcao cadeira" onclick="selecionarPrato('.cadeira')">
+                <img src="Media/cadeiraessa.png">
+                <h3>Cadeira de plástico</h3>
+                <p>Não é para sentar, é para comer mesmo</p>
+                <p class="preco">R$ 35,00</p>
+            </div>
+            <div class="opcao strogonoff" onclick="selecionarPrato('.strogonoff')">
+                <img src="Media/tatu.jpg">
+                <h3>Strogonoff de tatu</h3>
+                <p>Já tá batendo meio dia...</p>
+                <p class="preco">R$ 18,00</p>
+            </div>
+            <div class="opcao sopa" onclick="selecionarPrato('.sopa')">
+                <img src="Media/sopa-de-morcego-coronavirus.jpg">
+                <h3>Sopa de morcego</h3>
+                <p>Uma perfeita fake news para o COVID</p>
+                <p class="preco">R$ 15,00</p>
+            </div>
+        </div>
+        <h2>Agora, sua bebida</h2>
+        <div class="bebidas">
+            <div class="opcao amarelo" onclick="selecionarBebida('.amarelo')">
+                <img src="Media/alimentosemporcoessuco-de-laranja-c6717.jpg">
+                <h3>Suco de amarelo</h3>
+                <p>Sabor: Amarelo </p>
+                <p class="preco">R$ 4,00</p>
+            </div>
+            <div class="opcao trevosa" onclick="selecionarBebida('.trevosa')">
+                <img src="Media/aguapreta.jpg">
+                <h3>Água trevosa</h3>
+                <p>Água mineiral preta</p>
+                <p class="preco">R$ 6,66</p>
+            </div>
+            <div class="opcao vodka" onclick="selecionarBebida('.vodka')">
+                <img src="Media/Bacon_WebSize_1200x1200.jpg">
+                <h3>Vodka de bacon</h3>
+                <p>Defumadinha nhami nhami</p>
+                <p class="preco">R$ 59,00</p>
+            </div>
+            <div class="opcao refri" onclick="selecionarBebida('.refri')">
+                <img src="Media/frango-frito.jpg">
+                <h3>Refri de frango frito</h3>
+                <p>Por que comer se você pode beber? </p>
+                <p class="preco">R$ 12,00</p>
+            </div>
+            <div class="opcao chernobyl" onclick="selecionarBebida('.chernobyl')">
+                <img src="Media/shotradioativo.jpg">
+                <h3>Shot de Chernobyl</h3>
+                <p>Sabor radiante </p>
+                <p class="preco">R$ 26,04</p>
+            </div>
+        </div>
+        <h2>Por fim, sua sobremesa</h2>
+        <div class="sobremesas">
+            <div class="opcao  pudim" onclick="selecionarSobremesa('.pudim')">
+                <img src="Media/Pudim_de_gafanhoto.png">
+                <h3>Pudim de Gafanhoto</h3>
+                <p>Sim, de gafanhoto</p>
+                <p class="preco">R$ 19,99</p>
+            </div>
+            <div class="opcao porta" onclick="selecionarSobremesa('.porta')">
+                <img src="Media/3_PR_0_204408.jpg">
+                <h3>Porta de Chocolate</h3>
+                <p>Uma porta, de <br>chocolate</p>
+                <p class="preco">R$ 200,00</p>
+            </div>
+            <div class="opcao casquinha" onclick="selecionarSobremesa('.casquinha')">
+                <img src="Media/sorvete.jpg">
+                <h3>Casquinha gótica</h3>
+                <p>Sorvete de asfalto</p>
+                <p class="preco">R$ 7.50</p>
+            </div>
+            <div class="opcao uva" onclick="selecionarSobremesa('.uva')">
+                <img src="Media/uva.jpg">
+                <h3>3/4 de uva</h3>
+                <p>Nem inteira, nem meia</p>
+                <p class="preco">R$ 1.00</p>
+            </div>
+            <div class="opcao sorvete" onclick="selecionarSobremesa('.sorvete')">
+                <img src="Media/potesorvete.jpg">
+                <h3>Sorvete sem opacidade</h3>
+                <p>color: rgba(0 0 0 0) </p>
+                <p class="preco">R$ 26,99</p>
+            </div>
+        </div>
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>
