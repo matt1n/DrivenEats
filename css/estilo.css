@@ -40,8 +40,23 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.baixo button {
+.baixo .terminar {
     background-color: #CBCBCB;
+    width: 100%;
+    height: 61px;
+    padding: 0 90px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.botaoON {
+    background-color: #32B72F;
     width: 100%;
     height: 61px;
     padding: 0 90px;
@@ -66,7 +81,7 @@ h2{
     font-weight: 400;
     margin-bottom: 17px;
 }
-.pratos-principais{
+.pratosPrincipais{
     width: 100%;
     display: flex;
     overflow-x: scroll;
