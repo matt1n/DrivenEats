@@ -1,34 +1,46 @@
 function selecionarPrato(classe){
     const botaoselect = document.querySelector('.pratosPrincipais .selecionado');
+    const iconeselec = document.querySelector('.pratosPrincipais .selecionado .icon');
 
     if (botaoselect!==null){
         botaoselect.classList.remove('selecionado');
+        iconeselec.classList.add('esconde');
     }
 
     const botao = document.querySelector(classe);
     botao.classList.add('selecionado')
+    const icone = document.querySelector(classe + " .icon");
+    icone.classList.remove('esconde');
 }
 
 function selecionarBebida(classe){
     const botaoselect = document.querySelector('.bebidas .selecionado');
+    const iconeselec = document.querySelector('.bebidas .selecionado .icon');
 
     if (botaoselect!==null){
         botaoselect.classList.remove('selecionado');
+        iconeselec.classList.add('esconde');
     }
 
     const botao = document.querySelector(classe);
     botao.classList.add('selecionado')
+    const icone = document.querySelector(classe + " .icon");
+    icone.classList.remove('esconde');
 }
 
 function selecionarSobremesa(classe){
     const botaoselect = document.querySelector('.sobremesas .selecionado');
+    const iconeselec = document.querySelector('.sobremesas .selecionado .icon');
 
     if (botaoselect!==null){
         botaoselect.classList.remove('selecionado');
+        iconeselec.classList.add('esconde');
     }
 
     const botao = document.querySelector(classe);
     botao.classList.add('selecionado');
+    const icone = document.querySelector(classe + " .icon");
+    icone.classList.remove('esconde');
 }
 
 function teste() {

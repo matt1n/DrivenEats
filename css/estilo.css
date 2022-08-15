@@ -17,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.342);
+    z-index: 2;
 }
 h1 {
     font-family: Righteous;
@@ -76,7 +77,6 @@ h1 {
 }
 .pagina {
     margin: 92px 0 108px 0;
-    padding-left: 21px;
     padding-top: 31px;
 }
 h2{
@@ -84,19 +84,23 @@ h2{
     font-size: 26px;
     font-weight: 400;
     margin-bottom: 17px;
+    margin-left: 21px;
 }
 .pratosPrincipais{
     width: 100%;
+    padding-left: 21px;
     display: flex;
     overflow-x: scroll;
 }
 .bebidas {
     width: 100%;
+    padding-left: 21px;
     display: flex;
     overflow-x: scroll;
 }
 .sobremesas {
     width: 100%;
+    padding-left: 21px;
     display: flex;
     overflow-x: scroll;
 }
