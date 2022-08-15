@@ -117,6 +117,12 @@ h2{
     padding: 18px 14px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
 }
+.bebidas .opcao{
+    height: 202px;
+}
+.sobremesas .opcao{
+    height: 197px;
+}
 .opcao img {
     height: 87px;
     width: 144px;

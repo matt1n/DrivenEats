@@ -43,7 +43,7 @@ function selecionarSobremesa(classe){
     icone.classList.remove('esconde');
 }
 
-function teste() {
+function switchBotao() {
     const botaoselect1 = document.querySelector('.bebidas .selecionado');
     const botaoselect2 = document.querySelector('.sobremesas .selecionado');
     const botaoselect = document.querySelector('.pratosPrincipais .selecionado');
