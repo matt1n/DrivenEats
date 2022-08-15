@@ -82,13 +82,19 @@ function finalizar() {
     psobremesa=Number(psobremesa)
     
     let total = pprato+pbebida+psobremesa;
+
+    const nome = prompt('Digite seu nome:');
+    const endereco = prompt ('Endereço de entrega:')
     
     
     let pedido = `Olá, gostaria de fazer o pedido:
 - Prato: ${prato}
 - Bebida: ${bebida}
 - Sobremesa: ${sobremesa}
-Total: R$ ${total.toFixed(2)}`
+Total: R$ ${total.toFixed(2)}
+
+Nome: ${nome}
+Endereço: ${endereco}`
 
     let encodedpedido = encodeURIComponent(pedido)
     window.open(`https://wa.me/5522981818323?text=${encodedpedido}`)
