@@ -77,20 +77,11 @@ function confirmar(){
     let sobremesa = sobremesaEscolhida.innerHTML;
     
     let pratoPreco=document.querySelector('.pratosPrincipais .selecionado .precoCheck p');
-    let pprato = String(pratoPreco.innerHTML);
-    pprato=pprato.replace('R$', '');
-    pprato=pprato.replace(',','.');
-    pprato=Number(pprato);
+    let pprato = Number(String(pratoPreco.innerHTML.replace('R$', '').replace(',','.')));
     let bebidaPreco=document.querySelector('.bebidas .selecionado .precoCheck p');
-    let pbebida = String(bebidaPreco.innerHTML);
-    pbebida=pbebida.replace('R$', '');
-    pbebida=pbebida.replace(',','.');
-    pbebida=Number(pbebida);
+    let pbebida = Number(String(bebidaPreco.innerHTML.replace('R$', '').replace(',','.')));
     let sobremesaPreco=document.querySelector('.sobremesas .selecionado .precoCheck p');
-    let psobremesa = String(sobremesaPreco.innerHTML);
-    psobremesa=psobremesa.replace('R$', '');
-    psobremesa=psobremesa.replace(',','.')
-    psobremesa=Number(psobremesa)
+    let psobremesa = Number(String(sobremesaPreco.innerHTML.replace('R$', '').replace(',','.')));
     
     let total = pprato+pbebida+psobremesa;
 
@@ -125,20 +116,11 @@ function finalizar() {
     let sobremesa = sobremesaEscolhida.innerHTML;
     
     let pratoPreco=document.querySelector('.pratosPrincipais .selecionado .precoCheck p');
-    let pprato = String(pratoPreco.innerHTML);
-    pprato=pprato.replace('R$', '');
-    pprato=pprato.replace(',','.');
-    pprato=Number(pprato);
+    let pprato = Number(String(pratoPreco.innerHTML.replace('R$', '').replace(',','.')));
     let bebidaPreco=document.querySelector('.bebidas .selecionado .precoCheck p');
-    let pbebida = String(bebidaPreco.innerHTML);
-    pbebida=pbebida.replace('R$', '');
-    pbebida=pbebida.replace(',','.');
-    pbebida=Number(pbebida);
+    let pbebida = Number(String(bebidaPreco.innerHTML.replace('R$', '').replace(',','.')));
     let sobremesaPreco=document.querySelector('.sobremesas .selecionado .precoCheck p');
-    let psobremesa = String(sobremesaPreco.innerHTML);
-    psobremesa=psobremesa.replace('R$', '');
-    psobremesa=psobremesa.replace(',','.')
-    psobremesa=Number(psobremesa)
+    let psobremesa = Number(String(sobremesaPreco.innerHTML.replace('R$', '').replace(',','.')));
     
     let total = pprato+pbebida+psobremesa;
 
