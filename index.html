@@ -9,6 +9,36 @@
     <title>DrivenEats</title>
 </head>
 <body>
+    <div class="confirmacao confirmacaoSome">
+        <div class="container">
+            <span class="confirmaPedido">Confime seu pedido</span>
+            <div class="tabela">
+                <div class="pratoSelect spanSpace">
+                    <span class="escolhido">sim</span>
+                    <span class="preco"></span>
+                </div>
+                <div class="bebidaSelect spanSpace">
+                    <span class="escolhido">sim</span>
+                    <span class="preco"></span>
+                </div>
+                <div class="sobremesaSelect spanSpace">
+                    <span class="escolhido">sim</span>
+                    <span class="preco"></span>
+                </div>
+                <div class="total spanSpace">
+                    <span>Total: </span>
+                    <span class="preco">R$ </span>
+                </div>
+            </div>
+            <div class="botoesConfirma">
+                <button class="confirmar" onclick="finalizar()">Tudo certo, pode pedir!</button>
+                <button class="cancelar" onclick="cancel()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ---------------Fim da aba de confirmação--------------- -->
+
     <div class="topo">
         <div class="logo">
             <h1>DrivenEats</h1>
@@ -17,8 +47,11 @@
     </div>
     <div class="baixo">
         <button class="terminar">Selecione os 3 itens para fechar o pedido</button>
-        <button class="terminar2 botaoSome" onclick="finalizar()">Fechar pedido</button>
+        <button class="terminar2 botaoSome" onclick="confirmar()">Fechar pedido</button>
     </div>
+
+    <!-- ---------------Fim das partes fixas--------------- -->
+
     <div class="pagina">
         <h2>Primeiro, seu prato</h2>
         <div class="pratosPrincipais">
@@ -68,6 +101,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- ---------------Fim dos pratos--------------- -->
+
         <h2>Agora, sua bebida</h2>
         <div class="bebidas">
             <div class="opcao amarelo" onclick="selecionarBebida('.amarelo'); switchBotao()">
@@ -116,6 +152,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- ---------------Fim das bebidas--------------- -->
+
         <h2>Por fim, sua sobremesa</h2>
         <div class="sobremesas">
             <div class="opcao  pudim" onclick="selecionarSobremesa('.pudim'); switchBotao()">
@@ -164,6 +203,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- ---------------Fim das sobremesas--------------- -->
+
     </div>
  <script src="script.js"></script>
 

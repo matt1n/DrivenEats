@@ -5,6 +5,78 @@
 body {
     background-color: #E5E5E5;
 }
+.confirmacao{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.container{
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 22px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.confirmaPedido{
+    margin-top: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+.tabela{
+    width: 326px;
+    font-weight: 400;
+}
+.spanSpace{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.total{
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.botoesConfirma{
+    width: 333px;
+}
+.confirmar{
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
+}
+.cancelar{
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    border: none;
+    background-color: #50D074;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.confirmacaoSome{
+    display: none;
+}
+
+/* ---------------Fim da aba de confirmação--------------- */
+
 .topo {
     padding-left: 21px;
     height: 92px;
@@ -75,6 +147,9 @@ h1 {
 .botaoSome{
     display: none;
 }
+
+/* ---------------Fim dos fixos--------------- */
+
 .pagina {
     margin: 92px 0 108px 0;
     padding-top: 31px;
@@ -164,3 +239,4 @@ ion-icon {
     outline: 5px solid #32B72F;
     outline-offset: -5px;
 }
+/* ---------------Fim da página--------------- */
